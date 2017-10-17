@@ -1,0 +1,36 @@
+#Here is the program-coded in Ruby 2017
+
+one = 'abppplee'
+two = ['able','ale', 'apple', 'bale', "kangaroo"]
+
+
+masterCount = 0
+wordCount = 0
+countOne = 0
+twoCount = 0
+totalCount = 0
+
+#begin master loop
+while masterCount < two.length
+    word = two[masterCount]
+    puts word
+    while countOne < one.length
+        if one[countOne] == word[twoCount]
+            countOne += 1
+            twoCount += 1
+            totalCount += 1
+        else 
+            countOne += 1
+        end
+                    
+    end
+                
+    puts totalCount
+    
+    totalCount = 0
+    countOne = 0
+    twoCount = 0
+    
+    wordCount += 1
+    masterCount += 1
+end
